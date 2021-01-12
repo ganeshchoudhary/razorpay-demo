@@ -41,7 +41,6 @@ public class PaymentRestController {
 			
 		} catch (PaymentFailureException e) {
 			return new ResponseEntity<>(e.getMessage(), HttpStatus.FAILED_DEPENDENCY);
-			
 		}
 	}
 	
